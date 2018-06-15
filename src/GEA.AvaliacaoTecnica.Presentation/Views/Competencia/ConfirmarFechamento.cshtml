@@ -1,0 +1,55 @@
+﻿@model GEA.AvaliacaoTecnica.Application.ViewModels.CompetenciaAberturaViewModel
+<div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Confirmar Fechamento
+            </div>
+            <div class="panel-body">
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(model => model.DataVencimento, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(model => model.DataVencimento, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Empresa.RazaoSocial, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(model => model.Empresa.RazaoSocial, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.CompetenciasFechadas.FirstOrDefault().ValorBruto, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(model => model.CompetenciasFechada.ValorBruto, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.CompetenciasFechada.ValorLucro, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(model => model.CompetenciasFechada.ValorLucro, new { @class = "form-control", @editable = "false" })
+                    </div>
+                </div>
+                @using (Html.BeginForm("Encerrar", "Competencia", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.HiddenFor(model => model.Id)
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Confirmar" class="btn btn-primary" />
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="panel-heading">
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3"></div>
+
+</div>
+
+

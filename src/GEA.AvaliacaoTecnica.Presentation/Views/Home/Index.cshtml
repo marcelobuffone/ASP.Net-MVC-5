@@ -1,0 +1,136 @@
+﻿@{
+    ViewBag.Title = "Início";
+}
+@if (Request.IsAuthenticated)
+{
+    if (User.IsInRole("Operario"))
+    {
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-green">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-4"></div>
+                            <div class="col-xs-4">
+                                <i class="fa fa-arrow-circle-o-up fa-5x"></i>
+                            </div>
+                            <div class="col-xs-4"></div>
+
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="panel-footer">
+                            <a href="@Url.Action("Registrar", "EntradaVeiculo")">
+                                <span class="pull-left">Registrar Entrada Veículo</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-red">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-4"></div>
+                            <div class="col-xs-4">
+                                <i class="fa fa-arrow-circle-o-down fa-5x"></i>
+                            </div>
+                            <div class="col-xs-4"></div>
+
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="panel-footer">
+                            <a href="@Url.Action("Registrar", "SaidaVeiculo")">
+                                <span class="pull-left">Registrar Saída Veículo</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    }
+    <div class="row">
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4">
+                            <i class="fa fa-automobile fa-5x"></i>
+                        </div>
+                        <div class="col-xs-4"></div>
+
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="panel-footer">
+                        <a href="@Url.Action("Cadastrar", "Veiculo")">
+                            <span class="pull-left">Cadastrar Veículo</span>
+                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        @if (User.IsInRole("Admin"))
+        {
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-4"></div>
+                            <div class="col-xs-4">
+                                <i class="fa fa-user-plus fa-5x"></i>
+                            </div>
+                            <div class="col-xs-4"></div>
+
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="panel-footer">
+                            <a href="@Url.Action("Register", "Account")">
+                                <span class="pull-left">Cadastrar Operário</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-4"></div>
+                            <div class="col-xs-4">
+                                <i class="fa fa-industry fa-5x"></i>
+                            </div>
+                            <div class="col-xs-4"></div>
+
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="panel-footer">
+                            <a href="@Url.Action("Cadastrar", "Empresa")">
+                                <span class="pull-left">Cadastrar Empresa</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+}

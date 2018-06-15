@@ -1,0 +1,4 @@
+C:\Users\Marcelo\Desktop\Projetos\AvaliacaoTecnica\src\GEA.AvaliacaoTecnica.Domain\Fakes\DomainValidation.fakes : warning : Não é possível gerar correção para DomainValidation.Interfaces.Specification.ISpecification`1: o tipo é uma interface.
+C:\Users\Marcelo\Desktop\Projetos\AvaliacaoTecnica\src\GEA.AvaliacaoTecnica.Domain\Fakes\DomainValidation.fakes : warning : Não é possível gerar correção para DomainValidation.Interfaces.Validation.IValidator`1: o tipo é uma interface.
+C:\Users\Marcelo\Desktop\Projetos\AvaliacaoTecnica\src\GEA.AvaliacaoTecnica.Domain\Fakes\DomainValidation.fakes : warning : Não é possível gerar correção para DomainValidation.Interfaces.Validation.IRule`1: o tipo é uma interface.
+C:\Users\Marcelo\Desktop\Projetos\AvaliacaoTecnica\src\GEA.AvaliacaoTecnica.Domain\Fakes\DomainValidation.fakes : warning : Não é possível gerar correção para DomainValidation.Interfaces.Validation.ISelfValidator: o tipo é uma interface.

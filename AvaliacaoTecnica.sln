@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{A692CFD1-87CE-4F1E-9D0F-8BAB5F2DA907}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{794F1C2C-ED29-465E-A04E-0B836465BB2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{E58534A9-DD70-4497-BC57-F8408BE4D7A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{56FDB68C-A034-4429-AC6B-EF72A801EBED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{75CCEEBD-D12A-43F5-B960-0468ACDF5AD3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{272FE019-C265-4D44-802A-A54CD157C0AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GEA.AvaliacaoTecnica.Domain", "src\GEA.AvaliacaoTecnica.Domain\GEA.AvaliacaoTecnica.Domain.csproj", "{3F74CAD5-DC3D-44C4-A7F0-E889BA6A5C4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GEA.AvaliacaoTecnica.Infra.Data", "src\GEA.AvaliacaoTecnica.Infra.Data\GEA.AvaliacaoTecnica.Infra.Data.csproj", "{A0777BC5-5687-4867-96D9-B55BB2740EF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GEA.AvaliacaoTecnica.Application", "src\GEA.AvaliacaoTecnica.Application\GEA.AvaliacaoTecnica.Application.csproj", "{251A0DED-A6B4-49C6-9A26-54039B97852C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GEA.AvaliacaoTecnica.Presentation", "src\GEA.AvaliacaoTecnica.Presentation\GEA.AvaliacaoTecnica.Presentation.csproj", "{2E0C75C1-F86D-463C-8BCA-33E05003A108}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GEA.AvaliacaoTecnica.Infra.CrossCutting.MvcFilters", "src\GEA.AvaliacaoTecnica.Infra.CrossCutting.MvcFilters\GEA.AvaliacaoTecnica.Infra.CrossCutting.MvcFilters.csproj", "{F28BEDD5-6FC7-4C54-8696-33B8748A4C73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GEA.AvaliacaoTecnica.CrossCutting.Ioc", "src\GEA.AvaliacaoTecnica.CrossCutting.Ioc\GEA.AvaliacaoTecnica.CrossCutting.Ioc.csproj", "{78E8624C-C763-4942-9B9C-A45742F73F92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F74CAD5-DC3D-44C4-A7F0-E889BA6A5C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F74CAD5-DC3D-44C4-A7F0-E889BA6A5C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F74CAD5-DC3D-44C4-A7F0-E889BA6A5C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F74CAD5-DC3D-44C4-A7F0-E889BA6A5C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0777BC5-5687-4867-96D9-B55BB2740EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0777BC5-5687-4867-96D9-B55BB2740EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0777BC5-5687-4867-96D9-B55BB2740EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0777BC5-5687-4867-96D9-B55BB2740EF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{251A0DED-A6B4-49C6-9A26-54039B97852C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{251A0DED-A6B4-49C6-9A26-54039B97852C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{251A0DED-A6B4-49C6-9A26-54039B97852C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{251A0DED-A6B4-49C6-9A26-54039B97852C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E0C75C1-F86D-463C-8BCA-33E05003A108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E0C75C1-F86D-463C-8BCA-33E05003A108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E0C75C1-F86D-463C-8BCA-33E05003A108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E0C75C1-F86D-463C-8BCA-33E05003A108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F28BEDD5-6FC7-4C54-8696-33B8748A4C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F28BEDD5-6FC7-4C54-8696-33B8748A4C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F28BEDD5-6FC7-4C54-8696-33B8748A4C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F28BEDD5-6FC7-4C54-8696-33B8748A4C73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78E8624C-C763-4942-9B9C-A45742F73F92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78E8624C-C763-4942-9B9C-A45742F73F92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78E8624C-C763-4942-9B9C-A45742F73F92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78E8624C-C763-4942-9B9C-A45742F73F92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{75CCEEBD-D12A-43F5-B960-0468ACDF5AD3} = {56FDB68C-A034-4429-AC6B-EF72A801EBED}
+		{272FE019-C265-4D44-802A-A54CD157C0AD} = {56FDB68C-A034-4429-AC6B-EF72A801EBED}
+		{3F74CAD5-DC3D-44C4-A7F0-E889BA6A5C4A} = {E58534A9-DD70-4497-BC57-F8408BE4D7A2}
+		{A0777BC5-5687-4867-96D9-B55BB2740EF1} = {75CCEEBD-D12A-43F5-B960-0468ACDF5AD3}
+		{251A0DED-A6B4-49C6-9A26-54039B97852C} = {794F1C2C-ED29-465E-A04E-0B836465BB2D}
+		{2E0C75C1-F86D-463C-8BCA-33E05003A108} = {A692CFD1-87CE-4F1E-9D0F-8BAB5F2DA907}
+		{F28BEDD5-6FC7-4C54-8696-33B8748A4C73} = {272FE019-C265-4D44-802A-A54CD157C0AD}
+		{78E8624C-C763-4942-9B9C-A45742F73F92} = {272FE019-C265-4D44-802A-A54CD157C0AD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27BBC1F1-9781-44CA-9908-0FE4D7A9F780}
+	EndGlobalSection
+EndGlobal

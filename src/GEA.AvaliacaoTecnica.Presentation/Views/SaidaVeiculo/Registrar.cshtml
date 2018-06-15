@@ -1,0 +1,59 @@
+﻿@model GEA.AvaliacaoTecnica.Application.ViewModels.RegistroEntradaViewModel
+
+@{
+    ViewBag.Title = "Cadastrar";
+}
+
+@using (Html.BeginForm("Registrar", "SaidaVeiculo", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Registrar Saída Veículo
+                </div>
+                <div class="panel-body">
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Codigo, htmlAttributes: new { @class = "control-label col-md-4" })
+                        <div class="col-md-8">
+                            @Html.TextBoxFor(model => model.Codigo, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Codigo, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    @if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger">
+                            @ViewBag.ErrorMensager
+                        </div>
+                    }
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Registrar" class="btn btn-primary"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-heading">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3"></div>
+
+    </div>
+
+
+
+
+
+
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

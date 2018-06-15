@@ -1,0 +1,73 @@
+﻿@model GEA.AvaliacaoTecnica.Application.ViewModels.VeiculoViewModel
+
+@{
+    ViewBag.Title = "Cadastrar";
+}
+
+@using (Html.BeginForm("Cadastrar", "Veiculo", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Cadastrar Veiculo
+                </div>
+                <div class="panel-body">
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Placa, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.Placa, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Placa, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Marca, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.Marca, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Marca, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Modelo, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.Modelo, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Modelo, "", new { @class = "text-danger" })
+
+                        </div>
+                    </div>
+                    @if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger">
+                            @ViewBag.ErrorMensager
+                        </div>
+                    }
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Registrar" class="btn btn-primary" />
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-heading">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+
+    </div>
+
+
+
+
+
+
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

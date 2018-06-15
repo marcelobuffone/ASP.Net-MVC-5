@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{251A0DED-A6B4-49C6-9A26-54039B97852C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GEA.AvaliacaoTecnica.Application</RootNamespace>
+    <AssemblyName>GEA.AvaliacaoTecnica.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoMapper\AutoMapperConfig.cs" />
+    <Compile Include="AutoMapper\DomainToViewModelMappingProfile.cs" />
+    <Compile Include="Interfaces\ICompetenciaAbertaAppService.cs" />
+    <Compile Include="Interfaces\ICompetenciaFechadaAppService.cs" />
+    <Compile Include="Interfaces\IEmpresaAppService.cs" />
+    <Compile Include="Interfaces\IRegistroEmailAppService.cs" />
+    <Compile Include="Interfaces\IRegistroEntradaAppService.cs" />
+    <Compile Include="Interfaces\IRegistroSaidaAppService.cs" />
+    <Compile Include="Interfaces\IUsuarioAppService.cs" />
+    <Compile Include="Interfaces\IVeiculoAppService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CompetenciaAbertaAppService.cs" />
+    <Compile Include="Services\CompetenciaFechadaAppService.cs" />
+    <Compile Include="Services\EmpresaAppService.cs" />
+    <Compile Include="Services\RegistroEmailAppService.cs" />
+    <Compile Include="Services\RegistroEntradaAppService.cs" />
+    <Compile Include="Services\RegistroSaidaAppService.cs" />
+    <Compile Include="Services\UsuarioAppService.cs" />
+    <Compile Include="Services\VeiculoAppService.cs" />
+    <Compile Include="ViewModels\CompetenciaAberturaViewModel.cs" />
+    <Compile Include="ViewModels\CompetenciaFechadaViewModel.cs" />
+    <Compile Include="ViewModels\EmpresaViewModel.cs" />
+    <Compile Include="ViewModels\NovoRegistroEmailViewModel.cs" />
+    <Compile Include="ViewModels\RegistroEmailViewModel.cs" />
+    <Compile Include="ViewModels\RegistroEntradaViewModel.cs" />
+    <Compile Include="ViewModels\RegistroSaidaViewModel.cs" />
+    <Compile Include="ViewModels\UserRegisterViewModel.cs" />
+    <Compile Include="ViewModels\UsuarioViewModel.cs" />
+    <Compile Include="ViewModels\VeiculoViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GEA.AvaliacaoTecnica.Domain\GEA.AvaliacaoTecnica.Domain.csproj">
+      <Project>{3f74cad5-dc3d-44c4-a7f0-e889ba6a5c4a}</Project>
+      <Name>GEA.AvaliacaoTecnica.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEA.AvaliacaoTecnica.Infra.Data\GEA.AvaliacaoTecnica.Infra.Data.csproj">
+      <Project>{a0777bc5-5687-4867-96d9-b55bb2740ef1}</Project>
+      <Name>GEA.AvaliacaoTecnica.Infra.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

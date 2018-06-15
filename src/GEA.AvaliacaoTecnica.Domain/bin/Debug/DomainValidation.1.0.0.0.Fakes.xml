@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DomainValidation.1.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:DomainValidation.Interfaces.Specification.Fakes.StubISpecification`1">
+            <summary>Tipo stub de DomainValidation.Interfaces.Specification.ISpecification`1</summary>
+        </member>
+        <member name="M:DomainValidation.Interfaces.Specification.Fakes.StubISpecification`1.#ctor">
+            <summary>Inicializa uma nova instância do type StubISpecification</summary>
+        </member>
+        <member name="M:DomainValidation.Interfaces.Specification.Fakes.StubISpecification`1.DomainValidation#Interfaces#Specification#ISpecification{T}#IsSatisfiedBy(`0)">
+            <summary>Define stub de ISpecification`1.IsSatisfiedBy(!0 entity)</summary>
+        </member>
+        <member name="F:DomainValidation.Interfaces.Specification.Fakes.StubISpecification`1.IsSatisfiedByT0">
+            <summary>Define stub de ISpecification`1.IsSatisfiedBy(!0 entity)</summary>
+        </member>
+        <member name="T:DomainValidation.Interfaces.Validation.Fakes.StubIRule`1">
+            <summary>Tipo stub de DomainValidation.Interfaces.Validation.IRule`1</summary>
+        </member>
+        <member name="M:DomainValidation.Interfaces.Validation.Fakes.StubIRule`1.#ctor">
+            <summary>Inicializa uma nova instância do type StubIRule</summary>
+        </member>
+        <member name="M:DomainValidation.Interfaces.Validation.Fakes.StubIRule`1.DomainValidation#Interfaces#Validation#IRule{TEntity}#Validate(`0)">
+            <summary>Define stub de IRule`1.Validate(!0 entity)</summary>
+        </member>
+        <member name="P:DomainValidation.Interfaces.Validation.Fakes.StubIRule`1.DomainValidation#Interfaces#Validation#IRule{TEntity}#ErrorMessage">
+            <summary>Define stub de IRule`1.get_ErrorMessage()</summary>
+        </member>
+        <member name="F:DomainValidation.Interfaces.Validation.Fakes.StubIRule`1.ErrorMessageGet">
+            <summary>Define stub de IRule`1.get_ErrorMessage()</summary>
+        </member>
+        <member name="F:DomainValidation.Interfaces.Validation.Fakes.StubIRule`1.ValidateT0">
+            <summary>Define stub de IRule`1.Validate(!0 entity)</summary>
+        </member>
+        <member name="T:DomainValidation.Interfaces.Validation.Fakes.StubISelfValidator">
+            <summary>Tipo stub de DomainValidation.Interfaces.Validation.ISelfValidator</summary>
+        </member>
+        <member name="M:DomainValidation.Interfaces.Validation.Fakes.StubISelfValidator.#ctor">
+            <summary>Inicializa uma nova instância do type StubISelfValidator</summary>
+        </member>
+        <member name="M:DomainValidation.Interfaces.Validation.Fakes.StubISelfValidator.DomainValidation#Interfaces#Validation#ISelfValidator#IsValid">
+            <summary>Define stub de ISelfValidator.IsValid()</summary>
+        </member>
+        <member name="F:DomainValidation.Interfaces.Validation.Fakes.StubISelfValidator.IsValid">
+            <summary>Define stub de ISelfValidator.IsValid()</summary>
+        </member>
+        <member name="P:DomainValidation.Interfaces.Validation.Fakes.StubISelfValidator.DomainValidation#Interfaces#Validation#ISelfValidator#ValidationResult">
+            <summary>Define stub de ISelfValidator.get_ValidationResult()</summary>
+        </member>
+        <member name="F:DomainValidation.Interfaces.Validation.Fakes.StubISelfValidator.ValidationResultGet">
+            <summary>Define stub de ISelfValidator.get_ValidationResult()</summary>
+        </member>
+        <member name="T:DomainValidation.Interfaces.Validation.Fakes.StubIValidator`1">
+            <summary>Tipo stub de DomainValidation.Interfaces.Validation.IValidator`1</summary>
+        </member>
+        <member name="M:DomainValidation.Interfaces.Validation.Fakes.StubIValidator`1.#ctor">
+            <summary>Inicializa uma nova instância do type StubIValidator</summary>
+        </member>
+        <member name="M:DomainValidation.Interfaces.Validation.Fakes.StubIValidator`1.DomainValidation#Interfaces#Validation#IValidator{TEntity}#Validate(`0)">
+            <summary>Define stub de IValidator`1.Validate(!0 entity)</summary>
+        </member>
+        <member name="F:DomainValidation.Interfaces.Validation.Fakes.StubIValidator`1.ValidateT0">
+            <summary>Define stub de IValidator`1.Validate(!0 entity)</summary>
+        </member>
+        <member name="T:DomainValidation.Validation.Fakes.ShimRule`1">
+            <summary>Tipo de correção de DomainValidation.Validation.Rule`1</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.ShimRule`1.#ctor">
+            <summary>Inicializa uma nova instância de correção</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.ShimRule`1.#ctor(DomainValidation.Validation.Rule{`0})">
+            <summary>Inicializa uma nova correção para a instância determinada</summary>
+        </member>
+        <member name="T:DomainValidation.Validation.Fakes.ShimRule`1.AllInstances">
+            <summary>Definir shims para todos os membros de instâncias</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimRule`1.AllInstances.ErrorMessageGet">
+            <summary>Define correção de Rule`1.get_ErrorMessage()</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimRule`1.AllInstances.ErrorMessageSetString">
+            <summary>Define correção de Rule`1.set_ErrorMessage(String value)</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimRule`1.AllInstances.ValidateT0">
+            <summary>Define correção de Rule`1.Validate(!0 entity)</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.ShimRule`1.BehaveAsCurrent">
+            <summary>Atribui o comportamento &apos;Current&apos; para todos os métodos do tipo corrigido</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.ShimRule`1.BehaveAsNotImplemented">
+            <summary>Atribui o comportamento &apos;NotImplemented&apos; para todos os métodos do tipo corrigido</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimRule`1.Behavior">
+            <summary>Atribui o comportamento para todos os métodos do tipo corrigido</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.ShimRule`1.Bind(DomainValidation.Interfaces.Validation.IRule{`0})">
+            <summary>Vincula os membros da interface à correção.</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimRule`1.ConstructorISpecificationOfT0String">
+            <summary>Define correção de Rule`1.Rule`1(ISpecification`1&lt;!0&gt; spec, String errorMessage)</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimRule`1.ErrorMessageGet">
+            <summary>Define correção de Rule`1.get_ErrorMessage()</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimRule`1.ErrorMessageSetString">
+            <summary>Define correção de Rule`1.set_ErrorMessage(String value)</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimRule`1.ValidateT0">
+            <summary>Define correção de Rule`1.Validate(!0 entity)</summary>
+        </member>
+        <member name="T:DomainValidation.Validation.Fakes.ShimValidationError">
+            <summary>Tipo de correção de DomainValidation.Validation.ValidationError</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.ShimValidationError.#ctor">
+            <summary>Inicializa uma nova instância de correção</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.ShimValidationError.#ctor(DomainValidation.Validation.ValidationError)">
+            <summary>Inicializa uma nova correção para a instância determinada</summary>
+        </member>
+        <member name="T:DomainValidation.Validation.Fakes.ShimValidationError.AllInstances">
+            <summary>Definir shims para todos os membros de instâncias</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationError.AllInstances.MessageGet">
+            <summary>Define correção de ValidationError.get_Message()</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationError.AllInstances.MessageSetString">
+            <summary>Define correção de ValidationError.set_Message(String value)</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.ShimValidationError.BehaveAsCurrent">
+            <summary>Atribui o comportamento &apos;Current&apos; para todos os métodos do tipo corrigido</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.ShimValidationError.BehaveAsNotImplemented">
+            <summary>Atribui o comportamento &apos;NotImplemented&apos; para todos os métodos do tipo corrigido</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationError.Behavior">
+            <summary>Atribui o comportamento para todos os métodos do tipo corrigido</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationError.ConstructorString">
+            <summary>Define correção de ValidationError.ValidationError(String message)</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationError.MessageGet">
+            <summary>Define correção de ValidationError.get_Message()</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationError.MessageSetString">
+            <summary>Define correção de ValidationError.set_Message(String value)</summary>
+        </member>
+        <member name="T:DomainValidation.Validation.Fakes.ShimValidationResult">
+            <summary>Tipo de correção de DomainValidation.Validation.ValidationResult</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.ShimValidationResult.#ctor">
+            <summary>Inicializa uma nova instância de correção</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.ShimValidationResult.#ctor(DomainValidation.Validation.ValidationResult)">
+            <summary>Inicializa uma nova correção para a instância determinada</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationResult.AddValidationError">
+            <summary>Define correção de ValidationResult.Add(ValidationError error)</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationResult.AddValidationResultArray">
+            <summary>Define correção de ValidationResult.Add(ValidationResult[] validationResults)</summary>
+        </member>
+        <member name="T:DomainValidation.Validation.Fakes.ShimValidationResult.AllInstances">
+            <summary>Definir shims para todos os membros de instâncias</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationResult.AllInstances.AddValidationError">
+            <summary>Define correção de ValidationResult.Add(ValidationError error)</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationResult.AllInstances.AddValidationResultArray">
+            <summary>Define correção de ValidationResult.Add(ValidationResult[] validationResults)</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationResult.AllInstances.ErrosGet">
+            <summary>Define correção de ValidationResult.get_Erros()</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationResult.AllInstances.IsValidGet">
+            <summary>Define correção de ValidationResult.get_IsValid()</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationResult.AllInstances.MessageGet">
+            <summary>Define correção de ValidationResult.get_Message()</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationResult.AllInstances.MessageSetString">
+            <summary>Define correção de ValidationResult.set_Message(String value)</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationResult.AllInstances.RemoveValidationError">
+            <summary>Define correção de ValidationResult.Remove(ValidationError error)</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.ShimValidationResult.BehaveAsCurrent">
+            <summary>Atribui o comportamento &apos;Current&apos; para todos os métodos do tipo corrigido</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.ShimValidationResult.BehaveAsNotImplemented">
+            <summary>Atribui o comportamento &apos;NotImplemented&apos; para todos os métodos do tipo corrigido</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationResult.Behavior">
+            <summary>Atribui o comportamento para todos os métodos do tipo corrigido</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationResult.Constructor">
+            <summary>Define correção de ValidationResult.ValidationResult()</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationResult.ErrosGet">
+            <summary>Define correção de ValidationResult.get_Erros()</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationResult.IsValidGet">
+            <summary>Define correção de ValidationResult.get_IsValid()</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationResult.MessageGet">
+            <summary>Define correção de ValidationResult.get_Message()</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationResult.MessageSetString">
+            <summary>Define correção de ValidationResult.set_Message(String value)</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationResult.RemoveValidationError">
+            <summary>Define correção de ValidationResult.Remove(ValidationError error)</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidationResult._Addb__0ValidationResult">
+            <summary>Define correção de ValidationResult.&lt;Add&gt;b__0(ValidationResult result)</summary>
+        </member>
+        <member name="T:DomainValidation.Validation.Fakes.ShimValidator`1">
+            <summary>Tipo de correção de DomainValidation.Validation.Validator`1</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.ShimValidator`1.#ctor(DomainValidation.Validation.Validator{`0})">
+            <summary>Inicializa uma nova correção para a instância determinada</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidator`1.AddStringIRuleOfT0">
+            <summary>Define correção de Validator`1.Add(String name, IRule`1&lt;!0&gt; rule)</summary>
+        </member>
+        <member name="T:DomainValidation.Validation.Fakes.ShimValidator`1.AllInstances">
+            <summary>Definir shims para todos os membros de instâncias</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidator`1.AllInstances.AddStringIRuleOfT0">
+            <summary>Define correção de Validator`1.Add(String name, IRule`1&lt;!0&gt; rule)</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidator`1.AllInstances.GetRuleString">
+            <summary>Define correção de Validator`1.GetRule(String name)</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidator`1.AllInstances.RemoveString">
+            <summary>Define correção de Validator`1.Remove(String name)</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidator`1.AllInstances.ValidateT0">
+            <summary>Define correção de Validator`1.Validate(!0 entity)</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.ShimValidator`1.BehaveAsCurrent">
+            <summary>Atribui o comportamento &apos;Current&apos; para todos os métodos do tipo corrigido</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.ShimValidator`1.BehaveAsNotImplemented">
+            <summary>Atribui o comportamento &apos;NotImplemented&apos; para todos os métodos do tipo corrigido</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidator`1.Behavior">
+            <summary>Atribui o comportamento para todos os métodos do tipo corrigido</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.ShimValidator`1.Bind(DomainValidation.Interfaces.Validation.IValidator{`0})">
+            <summary>Vincula os membros da interface à correção.</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidator`1.Constructor">
+            <summary>Define correção de Validator`1.Validator`1()</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidator`1.GetRuleString">
+            <summary>Define correção de Validator`1.GetRule(String name)</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidator`1.RemoveString">
+            <summary>Define correção de Validator`1.Remove(String name)</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.ShimValidator`1.ValidateT0">
+            <summary>Define correção de Validator`1.Validate(!0 entity)</summary>
+        </member>
+        <member name="T:DomainValidation.Validation.Fakes.StubRule`1">
+            <summary>Tipo stub de DomainValidation.Validation.Rule`1</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.StubRule`1.#ctor(DomainValidation.Interfaces.Specification.ISpecification{`0},System.String)">
+            <summary>Inicializa uma nova instância</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.StubRule`1.CallBase">
+            <summary>Obtém ou define um valor que indica se o método base deve ser chamado em vez do comportamento de fallback</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.StubRule`1.InitializeStub">
+            <summary>Inicializa uma nova instância do type StubRule</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.StubRule`1.InstanceBehavior">
+            <summary>Obtém ou define o comportamento da instância.</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.StubRule`1.InstanceObserver">
+            <summary>Obtém ou define o observador de instância.</summary>
+        </member>
+        <member name="T:DomainValidation.Validation.Fakes.StubValidationError">
+            <summary>Tipo stub de DomainValidation.Validation.ValidationError</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.StubValidationError.#ctor(System.String)">
+            <summary>Inicializa uma nova instância</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.StubValidationError.CallBase">
+            <summary>Obtém ou define um valor que indica se o método base deve ser chamado em vez do comportamento de fallback</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.StubValidationError.InitializeStub">
+            <summary>Inicializa uma nova instância do type StubValidationError</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.StubValidationError.InstanceBehavior">
+            <summary>Obtém ou define o comportamento da instância.</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.StubValidationError.InstanceObserver">
+            <summary>Obtém ou define o observador de instância.</summary>
+        </member>
+        <member name="T:DomainValidation.Validation.Fakes.StubValidationResult">
+            <summary>Tipo stub de DomainValidation.Validation.ValidationResult</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.StubValidationResult.#ctor">
+            <summary>Inicializa uma nova instância</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.StubValidationResult.CallBase">
+            <summary>Obtém ou define um valor que indica se o método base deve ser chamado em vez do comportamento de fallback</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.StubValidationResult.InitializeStub">
+            <summary>Inicializa uma nova instância do type StubValidationResult</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.StubValidationResult.InstanceBehavior">
+            <summary>Obtém ou define o comportamento da instância.</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.StubValidationResult.InstanceObserver">
+            <summary>Obtém ou define o observador de instância.</summary>
+        </member>
+        <member name="T:DomainValidation.Validation.Fakes.StubValidator`1">
+            <summary>Tipo stub de DomainValidation.Validation.Validator`1</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.StubValidator`1.#ctor">
+            <summary>Inicializa uma nova instância</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.StubValidator`1.Add(System.String,DomainValidation.Interfaces.Validation.IRule{`0})">
+            <summary>Define stub de Validator`1.Add(String name, IRule`1&lt;!0&gt; rule)</summary>
+        </member>
+        <member name="F:DomainValidation.Validation.Fakes.StubValidator`1.AddStringIRuleOfT0">
+            <summary>Define stub de Validator`1.Add(String name, IRule`1&lt;!0&gt; rule)</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.StubValidator`1.CallBase">
+            <summary>Obtém ou define um valor que indica se o método base deve ser chamado em vez do comportamento de fallback</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.StubValidator`1.InitializeStub">
+            <summary>Inicializa uma nova instância do type StubValidator</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.StubValidator`1.InstanceBehavior">
+            <summary>Obtém ou define o comportamento da instância.</summary>
+        </member>
+        <member name="P:DomainValidation.Validation.Fakes.StubValidator`1.InstanceObserver">
+            <summary>Obtém ou define o observador de instância.</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.StubValidator`1.Remove(System.String)">
+            <summary>Define stub de Validator`1.Remove(String name)</summary>
+        </member>
+        <member name="F:DomainValidation.Validation.Fakes.StubValidator`1.RemoveString">
+            <summary>Define stub de Validator`1.Remove(String name)</summary>
+        </member>
+        <member name="M:DomainValidation.Validation.Fakes.StubValidator`1.Validate(`0)">
+            <summary>Define stub de Validator`1.Validate(!0 entity)</summary>
+        </member>
+        <member name="F:DomainValidation.Validation.Fakes.StubValidator`1.ValidateT0">
+            <summary>Define stub de Validator`1.Validate(!0 entity)</summary>
+        </member>
+    </members>
+</doc>
